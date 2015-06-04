@@ -1,6 +1,8 @@
 
 # <img align="right" src="http://jquerymy.com/i/covercouch130h.png" /> Cover Couch 0.1*&beta;*
 
+[![Join the chat at https://gitter.im/14mmm/covercouch](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/14mmm/covercouch?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 CoverCouch implements per-document r/w/d ACL for CouchDB. CoverCouch acts as proxy – original CouchDB REST API kept untouched, but all requests to Couch – r/w/d, \_changes feed, \_view, \_update, \_list or other fn call, replication – *everything* is filtered. 
 
 Document ACL is defined using `creator`,`owners` and `acl` properties of a doc. Their values, combined by `_design/acl/_view/acl` view function, reflect final ACL for a doc.
